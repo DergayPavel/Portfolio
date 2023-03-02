@@ -19,15 +19,45 @@ function Main() {
 
             display:'flex',
             flexDirection:'row',
+            justifyContent:'space-between',
+
         }}>
             <div className="leftBoxMain" style={{
-                
+                display:'flex',
+                flexDirection:'column',
+                alignContent:'flex-start'
             }}>
-                <div className="leftBoxMainTop">
-                    <div className="leftBoxMainTopDark">
+                <div className="leftBoxMainTop" style={{
+                    display:'flex',
+                    flexDirection:'column',
+
+                    marginBottom:'108px',
+                }}>
+                    <div className="leftBoxMainTopDark" style={{
+                        fontFamily: 'Mulish',
+                        fontStyle: 'normal',
+                        fontWeight: '300',
+                        fontSize: '16px',
+                        lineHeight: '20px',
+
+                        textTransform: 'lowercase',
+
+                        color: '#807F7D',
+                    }}>
                         dark theme
                     </div>
-                    <div className="leftBoxMainTopLight">
+                    <div className="leftBoxMainTopLight" style={{
+                        fontFamily: 'Mulish',
+                        fontStyle: 'normal',
+                        fontWeight: '300',
+                        fontSize: '16px',
+                        lineHeight: '20px',
+
+                        textTransform: 'lowercase',
+
+                        color: '#CFCA16',
+
+                    }}>
                         light theme
                     </div>
                 </div>
@@ -49,8 +79,13 @@ function Main() {
                     </div>
                 </div>
             </div>
-            <div className="rightBoxMain">
-                <div className="rightBoxMainTop">
+            <div className="rightBoxMain" style={{
+                display:'flex',
+                flexDirection:'column'
+            }}>
+                <div className="rightBoxMainTop" style={{
+                    marginBottom:'131px',
+                }} >
                     <img src={Picture1} alt="Picture1" />
                 </div>
                 <div className="rightBoxMainBotom">
